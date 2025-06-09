@@ -1,3 +1,10 @@
-# SnowTV
-FRee movies and tv shows website
-i am not resposible for any of this, it uses free api that dose include ads, for best experice use a ad blocker on crome or what bwroser of your choice would be.
+## SnowStream
+
+This app was created using https://getmocha.com.
+Need help or want to join the community? Join our [Discord](https://discord.gg/shDEGBSe2d).
+
+To run the devserver:
+```
+npm install
+npm run dev
+```

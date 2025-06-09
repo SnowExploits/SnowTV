@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #e0e0e0;
+  --accent-color: #cccccc;
+  --bg-color: #000000;
+  --bg-secondary: #121212;
+  --border-color: #333333;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-card {
+  @apply bg-zinc-900 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02];
+}
+
+.button-primary {
+  @apply bg-white text-black py-2 px-4 rounded-md hover:bg-gray-200 transition-colors duration-300;
+}
+
+.button-secondary {
+  @apply bg-zinc-800 text-white py-2 px-4 rounded-md hover:bg-zinc-700 transition-colors duration-300 border border-zinc-700;
+}
+
+.nav-link {
+  @apply relative py-2 px-3 text-white hover:text-gray-300 transition-colors duration-300;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-white;
+}
+
+.search-input {
+  @apply bg-zinc-800 text-white border border-zinc-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
